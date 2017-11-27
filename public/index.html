@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monitoramento em tempo real bateria</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<canvas id="canvas"></canvas>
+			</div>
+
+			<div class="col-md-6">
+				<div class="page-header"><h1>Porcentagem Restante para descarregar</div>
+				<center>
+					<input class="btn btn-default" style="height: 80px; color: white; width:400px" id="estimativa" type="button" name="est">	
+				</center>
+				<div class="page-header"><h1>Porcentagem Consumida</div>
+				<center>
+					<input class="btn btn-default" style="height: 80px; color: white; width:400px" id="estimativa-consumida" type="button" name="est">	
+				</center>				
+			</div>
+		</div>
+	</div>
+	<!-- Socket.io - aqui chamamos nosso socket. -->
+	<script src="/socket.io/socket.io.js"></script>
+ 
+	<!-- Chart - aqui chamamos nossa lib que gera o gráfico. -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/chart.js/dist/Chart.js"></script>
+	<script src="/js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

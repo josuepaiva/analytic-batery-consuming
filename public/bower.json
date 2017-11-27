@@ -1,0 +1,14 @@
+{
+  "name": "analytic-batery",
+  "homepage": "https://github.com/josuepaiva/analytic-batery-consuming",
+  "authors": [
+    "Josue <josuepaiva@lavid.ufpb.br>"
+  ],
+  "description": "Gera graficos dos dados de consumo de uma bateria",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "socket.io": "^2.0.4"
+  }
+}
